@@ -1,0 +1,5 @@
+Begin
+Input Num of USD
+VND = Num x 23,000
+Display VND
+End

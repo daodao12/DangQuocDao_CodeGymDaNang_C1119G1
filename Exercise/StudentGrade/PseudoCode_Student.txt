@@ -1,0 +1,9 @@
+Begin
+Input Student GPA
+If GPA < 35, "Loai E" 
+If 35 <= GPA < 45, "Loai D"
+If 45 <= GPA < 60, "Loai C"
+If 60 <= GPA < 75, "Loai B"
+Then "Loai A"
+Display Loai 
+End

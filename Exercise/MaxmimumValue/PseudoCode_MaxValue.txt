@@ -1,0 +1,7 @@
+Begin
+Input a1, a2, ..., ai; i<n
+Assume a1 = aMax
+If ai>a1 -> ai = aMax
+i<n, i++
+Display ai = aMax
+End
