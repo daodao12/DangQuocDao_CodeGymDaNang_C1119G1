@@ -1,0 +1,7 @@
+Begin
+Input a, b, c
+Assume a = Max
+If b>Max, b = Max
+then if c>Max, c = Max
+Display Max
+End
