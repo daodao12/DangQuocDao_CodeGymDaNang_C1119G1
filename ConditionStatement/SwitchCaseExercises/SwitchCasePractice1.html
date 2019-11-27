@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Re-structure if else to switch case</title>
+</head>
+<body>
+<script>
+  let browser = parseInt(prompt("Please input your browser name"));
+  switch (browser) {
+    case 'Edge':
+      alert("You have got the Edge!");
+      break;
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+      alert("Okay, we have support these browsers too");
+      break;
+    default:
+      alert("We hope that this page looks ok!")
+  }
+</script>
+</body>
+</html>
