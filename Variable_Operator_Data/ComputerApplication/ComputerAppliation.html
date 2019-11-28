@@ -6,7 +6,7 @@
 </head>
 <body>
 <fieldset>
-    <legend>CALCULATOR</legend>
+    <h1>CALCULATOR</h1>
     <marquee> Welcome to the computer application</marquee>
     Number A: <input id="amountOne" type="text">
     Number A: <input id="amountTwo" type="text"><br>
@@ -16,32 +16,30 @@
     <input type="submit" value="Division(/)" onclick="division();">
     <script>
         function addition() {
-            let amount1 = parseInt(document.getElementById("amountOne").value);
-            let amount2 = parseInt(document.getElementById("amountTwo").value);
-            let result = amount1+amount2;
-            alert("The result wanted of this addition is: " + result);
+            let amount1 = parseInt(document.getElementById('amountOne').value);
+            let amount2 = parseInt(document.getElementById('amountTwo').value);
+            let add = amount1 + amount2;
+            alert("The calculated number is: " + add);
         }
+        let multi = amount1*amount2;
         function multiplication() {
-            let amount1 = parseInt(document.getElementById("amountOne").value);
-            let amount2 = parseInt(document.getElementById("amountTwo").value);
-            let result = amount1*amount2;
-            alert("The result wanted of this multiplication is: " + result);
-        }
-        function subtraction() {
-            let amount1 = parseInt(document.getElementById("amountOne").value);
-            let amount2 = parseInt(document.getElementById("amountTwo").value);
-            let result = amount1-amount2;
-            alert("The result wanted of this subtraction is: " + result);
+            let amount1 = parseInt(document.getElementById('amountOne').value);
+            let amount2 = parseInt(document.getElementById('amountTwo').value);
+            let multi = amount1*amount2;
+            alert("The calculated number is: " + multi);
         }
         function division() {
-            let amount1 = parseInt(document.getElementById("amountOne").value);
-            let amount2 = parseInt(document.getElementById("amountTwo").value);
-            let result = amount1/amount2;
-            alert("The result wanted of this division is: " + result);
+            let amount1 = parseInt(document.getElementById('amountOne').value);
+            let amount2 = parseInt(document.getElementById('amountTwo').value);
+            let divs = amount1/amount2;
+            alert("The calculated number is: " + divs);
         }
-        </fieldset>
+        function subtraction() {
+            let amount1 = parseInt(document.getElementById('amountOne').value);
+            let amount2 = parseInt(document.getElementById('amountTwo').value);
+            let sub = amount1-amount2;
+            alert("The calculated number is: " + sub);
+        }
     </script>
 </body>
-<p> The calculator provides the best calculating service ever, enjoy the result !!!</p>
 </html>
-
