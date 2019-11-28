@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>VARIABLE, DATA, AND OPERATOR</title>
-</head>
+</head>sss
 <body>
   <script>
-    celsius = prompt('Please input a celsius: ');
-    let cel = parseInt(celsius);
-    let fah = ((9*cel)/5) + 32;
-    document.write('The Fahrenheit wanted is: ' + fah);
+      let cheGrade = parseInt(prompt("Please input your Chemistry grade: "));
+      let mathGrade = parseInt(prompt("Please input your Mathematics grade: "));
+      let bioGrade = parseInt(prompt("Please input your Biology grade: "));
+      let totalGpa = cheGrade + mathGrade + bioGrade;
+      let averageGPA = totalGpa/3;
+      document.write("Average GPA is: " + averageGPA);
+      document.write("<br/>");
+      document.write("Total GPA is: " + totalGpa);
   </script>
 </body>
 </html>
