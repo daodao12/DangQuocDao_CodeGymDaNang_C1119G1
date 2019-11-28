@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Body Mass Index Exercise</title>
+</head>
+<body>
+<script>
+    let weight = parseInt(prompt("Please input your weight (in kilogram): "));
+    let height = parseInt(prompt("Please input your height (in meterr): "));
+    let bmi = weight/(height*height);
+    if (bmi < 18.5) {
+        alert("You are underweight, eat more");
+    } else if (bmi < 25 && bmi >= 18.5) {
+        alert("You are normal, live long");
+    } else if (bmi < 30 && bmi >= 25) {
+        alert("You are overweight, do little exercise");
+    } else {
+        alert("You are obese, stop eating, do more exercise");
+    }
+
+</script>
+</body>
+</html>
