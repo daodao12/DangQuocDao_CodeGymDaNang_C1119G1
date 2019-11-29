@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Rank</title>
+</head>
+<body>
+<script>
+    let midTermGrade = parseInt(prompt("Please input your midterm grade: "));
+    let finalTermGrade = parseInt(prompt("Please input your final-term grade: "));
+    let avgGPA = (midTermGrade+(finalTermGrade*2))/3;
+    if (avgGPA > 8) {
+        alert("Your overall grade is: " + avgGPA +" You are Excellent!");
+    } else if (avgGPA >= 6.5 && avgGPA <8) {
+        alert("Your overall grade is: " + avgGPA +" You are Good!");
+    } else if (avgGPA >= 5 && avgGPA < 6.5) {
+        alert("Your overall grade is: " + avgGPA +" You are Avarage!");
+    } else {
+        alert("Your overall grade is: " + avgGPA +" You are Failure!");
+    }
+</script>
+</body>
+</html>

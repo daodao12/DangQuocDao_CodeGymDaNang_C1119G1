@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find the maximum number among 3 numbers</title>
+</head>
+<button onclick="myFunction()">Find maximum value</button>
+<p id="demo"></p>
+<body>
+<script>
+    let numOne = parseInt(prompt("Please input number A: "));
+    let numTwo = parseInt(prompt("Please input number B: "));
+    let numThree = parseInt(prompt("Please input number C: "));
+    function myFunction() {
+        document.getElementById("demo").innerHTML = Math.max(numThree, numTwo, numOne);
+    }
+</script>
+</body>
+</html>
