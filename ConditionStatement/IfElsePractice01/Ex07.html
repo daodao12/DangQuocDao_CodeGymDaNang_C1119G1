@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHECK THE PHONE BILL</title>
+</head>
+<body>
+<fieldset>
+    <legend>THE AUTOMATIC PHONE BILL CREATOR</legend>
+    <input type="text" id="minuteAmount" placeholder="Input minutes that you have dialed">
+    <input type="submit" value="Show Paying Amount" onclick="billCheck();"><br>
+    The amount needed to input must be in minutes, input the correct dialled minutes
+</fieldset>
+<script>
+    function billCheck() {
+        let dialAmount = document.getElementById("minuteAmount").value;
+        let dialFee = 1100;
+        let payAmount = dialAmount*dialFee;
+        alert('THE AUTOMATIC PHONE BILL CREATOR' + "\nYour Phone Bill Amount: " + payAmount + " VNĐ" + "\nThe dial fee per minute: 1100VNĐ/minute")
+    }
+</script>
+</body>
+</html>
