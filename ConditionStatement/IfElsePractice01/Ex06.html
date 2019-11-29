@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commission Counter</title>
+</head>
+<body>
+<fieldset>
+    <legend>CHECK COMMISSION BASED ON THE STORE'S REVENUE</legend>
+    <input type="text" id="revenueAmount" placeholder="Input your revenue in USD">
+    <input type="submit" value="Show Commission" onclick="commissionCheck();"><br>
+    The amount needed to input must be in US dollars, input the correct revenue
+</fieldset>
+<script>
+    function commissionCheck() {
+        let revenue = document.getElementById("revenueAmount").value;
+        if (revenue > 1000000) {
+            alert("You have made over 1m$ of revenue, your commission is:  25%");
+        } else if (revenue < 1000000 && revenue >= 500000) {
+            alert("You have made excellent revenue, your commission is: 20%");
+        } else if (revenue < 500000 && revenue >= 300000) {
+            alert("You have made over good revenue, your commission is: 15%");
+        } else if (revenue < 300000 && revenue >= 100000) {
+            alert("You have made over average revenue, your commission is: 10%");
+        } else if (revenue < 100000 && revenue >= 50000) {
+            alert("You have made over 50k$ revenue, your commission is: 5%");
+        } else {
+            alert("You have made over low revenue, your commission is: 2%");
+        }
+    }
+</script>
+</body>
+</html>
