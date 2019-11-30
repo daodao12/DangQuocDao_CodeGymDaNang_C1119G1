@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input a number and find the total value</title>
+</head>
+<fieldset>
+    <p>Click the button to get the sum of the sum of an array from 1 to your input value</p>
+    <input type="text" id="inputValue" placeholder="Input a positive value">
+    <button onclick="findSum()">Find Sum</button>
+    <p>The wanted sum: <span id="sumResult"></span></p>
+</fieldset>
+<body>
+<script>
+    function findSum() {
+        var inputNum = parseInt(document.getElementById("inputValue").value);
+        let total = 0;
+        let i = 0;
+        for (; i <= inputNum; i++) {
+            total += i;
+        }
+        document.getElementById("sumResult").innerHTML = total;
+    }
+</script>
+</body>
+</html>
