@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice For Structure</title>
+</head>
+<body>
+<label>For Loop</label>
+<p id="forLoop"></p>
+<script>
+    let loopTime = parseInt(prompt("How many times you want this loop be: "));
+    var loopAlert;
+    let i = 0;
+    for (i; i<=loopTime; i++) {
+        loopAlert += "The number is " + i + "<br>";
+    }
+    document.getElementById("forLoop").innerHTML = loopAlert;
+</script>
+</body>
+</html>
