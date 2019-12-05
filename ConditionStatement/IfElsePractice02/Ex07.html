@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLVE QUADRATIC EQUATION</title>
+</head>
+<fieldset>
+    <b><p>QUADRATIC EQUATION EXPRESSION</p></b>
+    <img src="http://tungnx.com/wp-content/uploads/2017/11/Ph%C6%B0%C6%A1ng-ph%C3%A1p-Gi%E1%BA%A3i-ph%C6%B0%C6%A1ng-tr%C3%ACnh-s%E1%BB%91-ph%E1%BB%A9c-chuy%C3%AAn-%C4%91%E1%BB%81-s%E1%BB%91-ph%E1%BB%A9c-h%E1%BB%8Dc-to%C3%A1n-s%E1%BB%91-ph%E1%BB%A9c-12-online-Maths9m.jpg" alt=”Sample” height=”100″ width=”100″>
+    <br>
+    <b><p>Input A of this equation:</p></b><br>
+    <input type="text" id="firstNum" placeholder="Input First Value">
+    <b><p>Input B of this equation:</p></b><br>
+    <input type="text" id="secondNum" placeholder="Input Second Value">
+    <b><p>Input C of this equation:</p></b><br>
+    <input type="text" id="thirdNum" placeholder="Input Third Value">
+    <button type="submit" onclick="calArea();">Calculate Area</button>
+    <u><p id="result">X wanted is:</p></u>
+</fieldset>
+<body>
+<script>
+    function calArea() {
+        let num1 = document.getElementById("firstNum").value;
+        let num2 = document.getElementById("secondNum").value;
+        let num3 = document.getElementById("thirdNum").value;
+        let alpha = (num2*num2) - (4*num1*num3);
+        let sprAlpha = Math.sqrt(aplha);
+        let result1 = (-num2 - sprAlpha))/(2*num1);
+        let result2 = (-num2 + sprAlpha)/(2*num1);
+        let result3 = (-num2/(2*num1));
+        if ( alpha > 0 ) {
+            document.getElementById("result").innerHTML = "X has two results: " + result1 + " " + result2;
+        } else if ( alpha < 0 ) {
+            document.getElementById("result").innerHTML = "X has no result: ";
+        } else {
+            document.getElementById("result").innerHTML = "X has equal results: " + result3;
+        }
+    }
+</script>
+</body>
+</html>

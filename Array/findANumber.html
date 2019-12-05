@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse An Array</title>
+</head>
+<body>
+<fieldset>
+    <legend>Find Maximum Value</legend>
+<!--    <input type="text" id="inputNum" placeholder="Input wanted numbers">-->
+    <button type="submit" onclick="findMax();">Detect</button>
+    <p id="result">Wanted Maximum Result Here:</p>
+</fieldset>
+<script>
+    function findMax() {
+        // var inputNum = document.getElementById("inputNum").value;
+        let x = [1, 2, 3, 4, 56, 78, 89, 12, 34, 45, 67, 23, 54, 43, 23, 13, 454438, 1118];
+        let max = x[0];
+        for (let i = 0; i <= x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+            }
+            document.getElementById("result").innerHTML = "Maximum number is " + max + " at index of " + i;
+        }
+    }
+</script>
+</body>
+</html>

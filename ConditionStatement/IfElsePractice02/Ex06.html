@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLVE QUADRATIC EQUATION</title>
+</head>
+<fieldset>
+    <b><p>QUADRATIC EQUATION EXPRESSION</p></b>
+    <img src="https://qph.fs.quoracdn.net/main-qimg-a2adca0f21a1f8f7abd208d84af83bfc">
+    <br>
+    <b><p>Input A of this equation:</p></b><br>
+    <input type="text" id="firstNum" placeholder="Input First Value">
+    <b><p>Input B of this equation:</p></b><br>
+    <input type="text" id="secondNum" placeholder="Input Second Value">
+    <button type="submit" onclick="calArea();">Calculate Area</button>
+    <u><p id="result">X wanted is:</p></u>
+</fieldset>
+<body>
+<script>
+    function calArea() {
+        let num1 = document.getElementById("firstNum").value;
+        let num2 = document.getElementById("secondNum").value;
+        let x = (-num2)/num1;
+        if (num1 === 0 && num2 === 0) {
+            document.getElementById("result").innerHTML = "X has unlimited results: ";
+        } else if (num1 === 0) {
+            document.getElementById("result").innerHTML = "X has no results: ";
+        } else {
+            document.getElementById("result").innerHTML = "X has a result: " + x;
+        }
+    }
+</script>
+</body>
+</html>

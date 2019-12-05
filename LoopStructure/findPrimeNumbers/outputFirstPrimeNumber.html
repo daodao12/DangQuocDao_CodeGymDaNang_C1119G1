@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <fieldset>
+        <meta charset="UTF-8">
+        <title>Show the first prime numbers</title>
+        <input type="text" id="inputNum" placeholder="Input a number">
+        <button type="submit" onclick="findPrime();">Find Prime</button>
+        <input type="text" disabled id="outputResult">
+        <p id="result">THE WANTED PRIMERS: </p>
+    </fieldset>
+</head>
+<body>
+<script>
+    // if (!NaN(checkNum)) {
+    //     break;
+    // } else {
+    //     document.getElementById("result").innerHTML = "You have not input a number, try again";
+    // }
+    function findPrime() {
+        var checkNum = parseInt(document.getElementById("inputNum").value);
+        if (!isNaN(checkNum)) {
+            break;
+        } else {
+            document.getElementById("result").innerHTML = "You have not input a number, try again";
+        }
+        var flag = true;
+        if (checkNum < 2) {
+            flag = false;
+        } else {
+            for (let x = 2; x < Math.sqrt(checkNum); x++) {
+                if (checkNum % x == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag = true) {
+            document.getElementById("result").innerHTML = checkNum + " is a prime number";
+        } else {
+            document.getElementById("result").innerHTML = checkNum + " is a prime number";
+        }
+    }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electronic Bill Creator</title>
+</head>
+<fieldset>
+    <legend>ELECTRONIC BILL CREATOR</legend><br>
+    <img src="https://www.aciworldwide.com/-/media/images/general/electronic-bill-payment-solutions.jpg?la=en&hash=7E3B896329845AF9097E738E944B95D2153162F5">
+    <p><b>Input Amount</b></p><br>
+    <input type="text" id="amountId" placeholder="Numbers are in Kw">
+    <button type="submit" onclick="createBill();">Create Bill</button>
+    <p id="result">Paying Amount Is:</p>
+</fieldset>
+<body>
+<script>
+    function createBill() {
+        let amount = parseInt(document.getElementById("amountId").value);
+        if (amount < 100) {
+            document.getElementById("result").innerHTML = "You have used under 100 KW, your paying amoutn is: " + amount*2000 + " VNĐ";
+        } else if (amount >= 100 && amount < 250) {
+            document.getElementById("result").innerHTML = "You have used under 250 KW, your paying amoutn is: " + amount*2500 + " VNĐ";
+        } else if (amount >= 250 && amount < 500) {
+            document.getElementById("result").innerHTML = "You have used under 5000 KW, your paying amoutn is: " + amount*3000 + " VNĐ";
+        } else if (amount >= 500 && amount < 1000) {
+            document.getElementById("result").innerHTML = "You have used under 1000 KW, your paying amoutn is: " + amount*4000 + " VNĐ";
+        } else {
+            document.getElementById("result").innerHTML = "You have used over 1000 KW, your paying amoutn is: " + amount*5500 + " VNĐ";
+        }
+    }
+</script>
+</body>
+</html>

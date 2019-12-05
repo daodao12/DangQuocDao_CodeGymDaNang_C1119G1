@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Perpendicular Triangle Area</title>
+</head>
+<fieldset>
+    <b><p>TRIANGLE SAMPLE</p></b>
+    <img src="http://4.bp.blogspot.com/-hInoLlF435o/VRxfXe7wQjI/AAAAAAAAAGo/rMmQqWgP-4g/s1600/C%2BProgram%2BArea%2BOf%2BRight%2BTriangle.jpg">
+    <br>
+    <b><p>Input the first side of this triangle:</p></b><br>
+    <input type="text" id="firstSide" placeholder="Input First Side Value">
+    <b><p>Input the second side of this triangle:</p></b><br>
+    <input type="text" id="secondSide" placeholder="Input Second Side Value">
+    <button type="submit" onclick="calArea();">Calculate Area</button>
+    <u><p id="result">Result Area:</p></u>
+</fieldset>
+<body>
+<script>
+    function calArea() {
+        let side1 = document.getElementById("firstSide").value;
+        let side2 = document.getElementById("secondSide").value;
+        let area = 0.5*side1*side2;
+        document.getElementById("result").innerHTML = "Result Area: " + area + " m2";
+    }
+</script>
+</body>
+</html>

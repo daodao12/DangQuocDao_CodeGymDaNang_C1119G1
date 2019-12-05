@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Elements Of An Array</title>
+</head>
+<body>
+<fieldset>
+    <legend>Connect Elements</legend>
+    <button onclick="connectElement();">Connect</button>
+    <p id="result"></p>
+</fieldset>
+<script>
+    function connectElement() {
+        var myColor = ["Red", "Green", "White", "Black"];
+        var connect = document.getElementById("result");
+        connect.innerHTML = myColor.join();
+    }
+</script>
+</body>
+</html>

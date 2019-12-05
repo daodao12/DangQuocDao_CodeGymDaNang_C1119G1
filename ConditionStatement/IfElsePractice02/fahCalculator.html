@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <u><title>Calculate Fah</title></u>
+</head>
+<fieldset>
+    <u><p>CELSIUS TO FAHRENHEIT CONVERTER</p></u>
+    <input type="text" id="inputValue" PLACEHOLDER="Input Celsius Value">
+    <button type="submit" onclick="inputFah();" >CONVERT TO F</button>
+    <p id="result">THE CONVERTED VALUE IS:</p>
+</fieldset>
+<body>
+<script>
+    let cel = document.getElementById("inputValue").value;
+    let fah = ((9*cel)/5) + 32;
+    function inputFah() {
+        document.getElementById("result").innerHTML = fah + " fahrenheit(s)";
+    }
+</script>
+</body>
+</html>

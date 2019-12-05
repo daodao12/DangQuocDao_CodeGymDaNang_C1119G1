@@ -6,7 +6,19 @@
 </head>
 <body>
 <label>Do You Love Me</label>
-<input type="submit" value ="YES" onclick="YesID();">
-<input type="submit" value="NO" >
+<input type="button" value ="YES" onclick="yesId();">
+<input type="button" value="NO"  style="position: absolute" onmouseover="noId();" id="no">
+<p id="text">Answer: </p>
+<script>
+    function yesId() {
+        document.getElementById("text").innerHTML = "Answer: Chó yêu";
+    }
+    function noId() {
+        var a = Math.random()*window.innerHeight;
+        var b = Math.random()*window.innerWidth;
+        document.getElementById("no").style.top = a + 'px';
+        document.getElementById("no").style.left = b + 'px';
+    }
+</script>
 </body>
 </html>

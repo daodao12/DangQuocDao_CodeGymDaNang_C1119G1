@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meter To Feet Converter</title>
+</head>
+<fieldset>
+    <i><u>METER TO FEET CONVERTER</u></i><br>
+    <input type="text" placeholder="Input meter value" id="meterValue">
+    <button type="submit" onclick="mtConverter();">CONVERT TO FT</button>
+    <p id="demo">Result:</p>
+</fieldset>
+<body>
+<script>
+    function mtConverter() {
+    let mt = document.getElementById("meterValue").value;
+    let convert = mt*3.28;
+    document.getElementById("demo").innerHTML = convert + " meters";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Multiplication Table</title>
+</head>
+<body>
+<script language="javascript">
+    var mulTable = "<table border=\"1px\">";
+    for (var i = 0; i <= 7; i++) {
+        mulTable += "<tr>";
+        for (var j = 0; i <= 8; j++) {
+            var result = i + " x " + j + " = " + (i * j);
+            mulTable += "<td>" + result + "</td>";
+        }
+        mulTable += "</tr>";
+    }
+    mulTable += "</table>";
+    document.write(mulTable);
+</script>
+
+</body>
+</html>
+

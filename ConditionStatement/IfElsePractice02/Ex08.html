@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check eligible human age</title>
+</head>
+<body>
+<fieldset>
+    <b><p>ELIGIBLE HUMAN AGE CHECKER</p></b>
+    <img align="center" style="width:420px;height:242px;border:0;"
+         src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/CMNH-Lucy-Reconstruction_16x9.jpg?itok=6MgVOcsN">
+    <p align="left">Note: Human Ancestors</p>
+    <input type="text" id="inputAge">
+    <u>
+        <button type="submit" onclick="ageCheck();">CHECK AGE</button>
+    </u>
+    <p id="humanAge">Eligible Age: ?!</p>
+</fieldset>
+<script>
+    function ageCheck() {
+        var age = document.getElementById("inputAge").value;
+        if (age > 0 && age < 120) {
+            document.getElementById("humanAge").innerHTML = age + " is a human age";
+        } else {
+            document.getElementById("humanAge").innerHTML = age + " is NOT a human age";
+        }
+    }
+</script>
+</body>
+</html>

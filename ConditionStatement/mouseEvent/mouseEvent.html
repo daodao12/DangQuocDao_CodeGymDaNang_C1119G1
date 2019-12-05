@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Event</title>
+</head>
+<body>
+<form>
+    <fieldset>
+    <img id="dongLucBall" style="width: 300px" src="http://thethaosi.vn/wp-content/uploads/2019/04/futsal-galaxy-trang-1_large.png">
+    <i><p>CLICK TO MOVE THE DONGLUC BALL</p></i>
+    <input type="button" value="Move Me" onclick="moveRight();">
+    </fieldset>
+</form>
+<script>
+    var myBall;
+    myBall = document.getElementById("dongLucBall");
+    function start() {
+        myBall = document.getElementById("dongLucBall");
+        myBall.style.position = 'relative';
+        myBall.style.left = '0px';
+    }
+    function moveRight() {
+        myBall.style.left = parseInt(myBall.style.left) + 20 + 'px';
+    }
+    window.onload = start;
+</script>
+</body>
+</html>

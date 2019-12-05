@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<fieldset>
+    <legend>Income Tax Counter</legend>
+    <img src="income.png">
+    <p>Input your status namely Married, Single, or Veterans</p><br>
+    <input type="text" id="statusId" placeholder="Please input the right names">
+    <p>Input your annual income</p><br>
+    <input type="text" id="incomeAmount" placeholder="Amount must be in VNĐ">
+    <button type="submit" onclick="count();">Count</button>
+    <p id="result">Income Tax Amount:</p>
+</fieldset>
+<body>
+<script>
+    function count() {
+        let relType = document.getElementById("statusId").value;
+        let amount = document.getElementById("incomeAmount").value;
+        if (relType === "Married") {
+            if (amount < 20000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.03 + " VNĐ";
+            } else if (amount >= 20000000 && amount < 50000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.07 + " VNĐ";
+            } else if (amount >= 50000000 && amount < 200000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.13 + " VNĐ";
+            } else if (amount >= 200000000 && amount < 1000000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.19 + " VNĐ";
+            } else{
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.21 + " VNĐ";
+            }
+        } else if (relType === "Single") {
+            if (amount < 20000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.04 + " VNĐ";
+            } else if (amount >= 20000000 && amount < 50000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.08 + " VNĐ";
+            } else if (amount >= 50000000 && amount < 200000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.16 + " VNĐ";
+            } else if (amount >= 200000000 && amount < 1000000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.2 + " VNĐ";
+            } else {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.24 + " VNĐ";
+            }
+        } else if (relType === "Veterans") {
+            if (amount < 20000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.02 + " VNĐ";
+            } else if (amount >= 20000000 && amount < 50000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.04 + " VNĐ";
+            } else if (amount >= 50000000 && amount < 200000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.12 + " VNĐ";
+            } else if (amount >= 200000000 && amount < 1000000000) {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.14 + " VNĐ";
+            } else {
+                document.getElementById("result").innerHTML = "Income Tax Amount: " + amount*0.17 + " VNĐ";
+            }
+        } else {
+            document.getElementById("result").innerHTML = "You have input a wrong status, please re-input";
+        }
+    }
+</script>
+</body>
+</html>
